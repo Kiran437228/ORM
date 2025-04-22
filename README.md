@@ -44,6 +44,7 @@ admin.site.register(Movie,MovieAdmin)
 
 ## OUTPUT
 
+
 ![Screenshot 2025-04-11 144635](https://github.com/user-attachments/assets/222782d7-2fd9-45d7-b459-266f469e72d5)
 
 
