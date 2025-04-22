@@ -1,13 +1,11 @@
 # Ex02 Django ORM Web Application
-## Date: 
+## Date: 15-04-2025
+## reg no: 212224240076
 
 ## AIM
 To develop a Django application to store and retrieve data from a Movies Database using Object Relational Mapping(ORM).
 
 ## ENTITY RELATIONSHIP DIAGRAM
-
-
-
 ## DESIGN STEPS
 
 ### STEP 1:
@@ -24,11 +22,30 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
+from django.db import models
+from django.contrib import admin
+class Movie(models.Model):
+mid=models.IntegerField()
+    mname=models.CharField(max_length=100)
+    collection=models.IntegerField()
+    year=models.IntegerField()
+    rating=models.FloatField()
+
+class MovieAdmin(admin.ModelAdmin):
+    list_display=('mid','mname','collection','year','rating')
+```
+from django.contrib import admin
+from .models import Movie,MovieAdmin
+admin.site.register(Movie,MovieAdmin)
+```
+
+
 
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![Screenshot 2025-04-11 144635](https://github.com/user-attachments/assets/222782d7-2fd9-45d7-b459-266f469e72d5)
+
 
 
 ## RESULT
